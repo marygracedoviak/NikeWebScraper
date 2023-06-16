@@ -1,9 +1,13 @@
 # Nike Web Scraper
 ## Description
 This project was created as a way to track the price of a specific product, so that you can buy when the price is at it's lowest. The program pulls the title and price of an item once per day and sends an email if it drops below a certain price.
+
 First I used the requests package to scrap the webpage. Then I used BeautifulSoup in order to make the content more legible. I used .content and .prettify to organize the webpage content. Then I inspected the HTML on the webpage and found the names of the title and price, then searched for that using .find and .get_text. 
+
 I used the CSV module to create a CSV file and write the scraped data to the file. 
+
 In order to be alerted when the price drops, I utilized the SMTPLIB module to send an email to myself when the price drops below a certain number. 
+
 To execute the program, I created an infinite while loop that checks the price every 24 hours. This program will run until manually interrupted. 
 
 ## To run the program
